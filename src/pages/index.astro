@@ -1,16 +1,101 @@
 ---
-
+import Kortspil from "../components/Kortspil.astro";
+import Overskrift from "../components/Overskrift.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Astro</title>
+  </head>
+  <body>
+    <section class="section1">
+      <Overskrift />
+      <p>
+        Magi-Makkerne bringer magi og glæde til indlagte børn – og det vi er
+        meget stolte af!
+      </p>
+      <br />
+      <p>
+        Tryllekunstnernes arbejde er af uvurderlig værdi for børnene, der står
+        over for udfordringer som stik, bedøvelser, operationer eller
+        følelsesmæssig uro og frygt.
+      </p>
+      <br />
+      <p>
+        Gennem magiske tricks skaber vi en underholdende og positiv oplevelse,
+        der giver børnene en pause fra sygdom, ventetid, frygt og sorg.
+      </p>
+    </section>
+
+    <section class="section2">
+      <h2>Hvor tryller vi</h2>
+      <img src="" alt="" />
+      <p>
+        Magi-Makkerne består i dag af 7 tryllekunstnere, som bringer magi og
+        glæde til børn på 9 af hospitalernes børneafdelinger over hele landet.
+      </p>
+    </section>
+
+    <section class="section3">
+      <h2>Magi-Makkerne tryller!</h2>
+      <Kortspil />
+    </section>
+
+    <section class="section4">
+      <h2>Tryllekunstner konceptet</h2>
+      <p>
+        Initiativet til at bringe tryllekunstnere ind på hospitalerne blev
+        startet i 2016, takket være vores ambassadør Henrik Svanekiær.
+      </p>
+      <p>
+        Siden da har tryllekunstnerne været en fast og positiv del af hverdagen
+        for børnene, og de har været med til at skabe et pusterum midt i svære
+        tider.
+      </p>
+    </section>
+
+    <section class="section5">
+      <h2>Magi for børn i alle aldre</h2>
+      <img class="holdet" src="images/Holdet.webp" alt="børneholdet" />
+      <!-- <img class="holdet" src="images/holdet.svg" alt="børneholdet" /> -->
+      <p>Magi-Makkerne henvender sig til børn i alle aldre.</p>
+      <p>
+        For de yngre børn har vi trylletricks og balloner, der vækker undren og
+        skaber smil, samt muligheden for at få lavet ballondyr.
+      </p>
+      <p>
+        For de ældre tilbyder vi små trylletricks, korttricks og små illusioner,
+        der kan udføres for venner og familie – både ved udskrivelsen og under
+        besøg.
+      </p>
+      <p>
+        Med Magi-Makkerne kan vi sikre, at magien fortsætter der, hvor den gør
+        den største forskel.
+      </p>
+    </section>
+
+    <h3>Sammen i en verden af magi</h3>
+  </body>
 </html>

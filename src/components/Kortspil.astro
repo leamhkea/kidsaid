@@ -1,0 +1,56 @@
+---
+import "../styles/global.css";
+---
+
+<section>
+  <div class="container">
+    <ul class="wrapper">
+      <li><img src="card.png" alt="billede" /></li>
+      <li><img src="card.png" alt="billede" /></li>
+      <li><img src="card.png" alt="billede" /></li>
+      <li><img src="card.png" alt="billede" /></li>
+      <li><img src="card.png" alt="billede" /></li>
+      <li><img src="card.png" alt="billede" /></li>
+      <li><img src="card.png" alt="billede" /></li>
+    </ul>
+  </div>
+</section>
+
+<style>
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container .card {
+    position: absolute;
+    /* width: 240px;
+  height: 320px; */
+    cursor: pointer;
+    transition: 0.5s;
+    transform-origin: 50% 100%;
+    transform: rotate(calc(var(--i) * 5deg))
+      translate(calc(var(--i) * 120px), -50px);
+  }
+
+  .container:hover .card {
+    transform: rotate(calc(var(--i) * 5deg))
+      translate(calc(var(--i) * 120px), -50px);
+  }
+
+  .container .card:hover {
+    translate: calc(var(--i) * 20px) -50px;
+    z-index: 100;
+  }
+</style>

@@ -1,0 +1,85 @@
+/*
+/* downloadede fonte */
+
+.irish-grover-regular {
+  font-family: "Irish Grover", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* <uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 100 to 900 */
+.montserrat-alternates-regular {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: "";
+  background-color: rgba(255, 254, 243, 1);
+}
+
+h1 {
+  font-family: "Irish Grover", system-ui;
+  font-size: var(--H1-Size);
+  text-align: center;
+  margin: 5% 1%;
+}
+
+h2 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: var(--H2-Size);
+  margin-top: 5%;
+  text-align: center;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--Brødtekst-Size);
+  line-height: var(--LineHeight);
+  margin: 1% 20%;
+}
+
+img {
+  width: 100%;
+}
+
+.holdet {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+:root {
+  /* Font Size */
+  --H1-Size: 4rem;
+  --H2-Size: 2rem;
+  --H3-Size: 2rem;
+  --Brødtekst-Size: 1.1rem;
+
+  /* Colors */
+  --White: rgba(255, 255, 255, 1);
+  --Black: rgba(0, 0, 0, 1);
+  --Purple: rgba(168, 127, 167, 1);
+  --Green: rgba(114, 189, 71, 1);
+  --Yellow: rgba(255, 172, 0, 1);
+  --Red: rgba(213, 102, 110, 1);
+  --Pink: rgba(220, 158, 181, 1);
+  --Blue: rgba(53, 121, 185, 1);
+
+  /* Other */
+  --LineHeight: 2.1rem;
+  --BorderRadius: 0.3rem;
+  --Padding: 2rem;
+}
