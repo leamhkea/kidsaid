@@ -30,7 +30,8 @@
   padding: 0;
   box-sizing: border-box;
   list-style-type: "";
-  background-color: rgba(255, 254, 243, 1);
+  /* background-color: rgba(255, 254, 243, 1); */
+  background-color: blueviolet;
 }
 
 h1 {
