@@ -1,0 +1,50 @@
+<div class="container1">
+  <p>
+    Magi-Makkerne bringer magi og glæde til indlagte børn - og det vi er meget
+    stolte af!
+  </p>
+</div>
+<div class="container2">
+  <p>
+    Tryllekunstnernes arbejde er af uvurderlig værdi for børnene, der står over
+    for udfordringer som stik, bedøvelser, operationer eller følelsesmæssig uro
+    og frygt.
+  </p>
+</div>
+<div class="container3">
+  <p>
+    Gennem magiske tricks skaber vi en underholdende og positiv oplevelse, der
+    giver børnene en pause fra sygdom, ventetid, frygt og sorg.
+  </p>
+</div>
+
+<style>
+  .container1 .container2 .container3 {
+    padding-top: 20%;
+    padding-bottom: 20%;
+    font-size: 10rem;
+  }
+</style>
+
+<script>
+  import { animate, stagger, inView, scroll, timeline } from "motion";
+
+  document.querySelectorAll(".container1").forEach((eachContainer) => {
+    const p = eachContainer.querySelector("p");
+    scroll(animate(p, { x: [-400, 400] }), {
+      target: p,
+    });
+  });
+  document.querySelectorAll(".container2").forEach((eachContainer) => {
+    const p = eachContainer.querySelector("p");
+    scroll(animate(p, { x: [1000, 400] }), {
+      target: p,
+    });
+  });
+  document.querySelectorAll(".container3").forEach((eachContainer) => {
+    const p = eachContainer.querySelector("p");
+    scroll(animate(p, { x: [400, 400] }), {
+      target: p,
+    });
+  });
+</script>
