@@ -1,23 +1,40 @@
 ---
-import "../styles/global.css";
+
 ---
 
 <section>
   <div class="container">
-    <ul class="wrapper">
-      <li><img src="card.png" alt="billede" /></li>
-      <li><img src="images/birger.webp" alt="billede" /></li>
-      <li><img src="images/helle.webp" alt="billede" /></li>
-      <li><img src="images/falbe.webp" alt="billede" /></li>
-      <li><img src="images/henny.webp" alt="billede" /></li>
-      <li><img src="images/rasmus.webp" alt="billede" /></li>
-      <li><img src="images/lasse.webp" alt="billede" /></li>
-      <li><img src="images/michael.webp" alt="billede" /></li>
-    </ul>
+    <div class="card" style="--i: -3">
+      <img src="images/birger.webp" alt="" />
+    </div>
+    <div class="card" style="--i: -2">
+      <img src="images/falbe.webp" alt="" />
+    </div>
+    <div class="card" style="--i: -1">
+      <img src="images/helle.webp" alt="" />
+    </div>
+    <div class="card" style="--i: 0">
+      <img src="images/henny.webp" alt="" />
+    </div>
+    <div class="card" style="--i: 1">
+      <img src="images/lasse.webp" alt="" />
+    </div>
+    <div class="card" style="--i: 2">
+      <img src="images/michael.webp" alt="" />
+    </div>
+    <div class="card" style="--i: 3">
+      <img src="images/rasmus.webp" alt="" />
+    </div>
   </div>
 </section>
 
 <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
   section {
     display: flex;
     justify-content: center;
@@ -37,7 +54,7 @@ import "../styles/global.css";
   .container .card {
     position: absolute;
     /* width: 240px;
-  height: 320px; */
+    height: 320px; */
     cursor: pointer;
     transition: 0.5s;
     transform-origin: 50% 100%;
@@ -55,68 +72,3 @@ import "../styles/global.css";
     z-index: 100;
   }
 </style>
-<!-- <section> 
-  <div class="container">
-    <ul class="wrapper">
-      <li class="card"><img src="images/birger.webp" alt="billede" /></li>
-      <li class="card"><img src="images/helle.webp" alt="billede" /></li>
-      <li class="card"><img src="images/falbe.webp" alt="billede" /></li>
-      <li class="card"><img src="images/henny.webp" alt="billede" /></li>
-      <li class="card"><img src="images/rasmus.webp" alt="billede" /></li>
-      <li class="card"><img src="images/lasse.webp" alt="billede" /></li>
-      <li class="card"><img src="images/michael.webp" alt="billede" /></li>
-    </ul>
-  </div>
-</section>
-<style>
-  section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    overflow: hidden;
-  }
-
-  .container {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .wrapper {
-    display: flex;
-    gap: 10px; /* Tilføj mellemrum mellem kortene */
-    list-style: none; /* Fjern standard bullet points */
-    padding: 0; /* Fjern standard padding */
-    margin: 0; /* Fjern standard margin */
-  }
-
-  .card {
-    position: relative; /* Fjern absolut positionering for nemmere styling */
-    /* width: 240px;
-    height: 320px; */
-    cursor: pointer;
-    transition: transform 0.5s;
-    transform-origin: 50% 100%;
-    /* background-color: #fff; */
-  }
-
-  .card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-
-  /* .wrapper :hover .card {
-    transform: rotate(calc(var(--i) * 5deg))
-      translate(calc(var(--i) * 120px), -50px);
-  } */
-
-  .card:hover {
-    transform: scale(1.05); /* Tilføj zoom ved hover */
-    z-index: 100;
-  }
-</style> -->
