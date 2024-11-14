@@ -46,20 +46,30 @@ h1 {
 h2 {
   font-family: "Montserrat Alternates", sans-serif;
   font-size: var(--H2-Size);
-  margin-top: 5%;
+  margin-top: 8rem;
+  margin-bottom: 1rem;
   text-align: center;
-  color: rgba(213, 102, 110, 1);
+  color: rgba(255, 172, 0, 1);
 }
 
 p {
   font-family: "Montserrat", sans-serif;
   font-size: var(--Brødtekst-Size);
   line-height: var(--LineHeight);
-  margin: 1% 20%;
+  margin: 0rem 20rem;
+  padding: 1.5rem;
 }
 
 img {
   width: 100%;
+}
+
+footer {
+  margin-top: 15rem;
+}
+
+.section2 {
+  background-color: rgba(220, 158, 181, 1);
 }
 
 /* .section5 {
@@ -96,7 +106,7 @@ img {
   --Blue: rgba(53, 121, 185, 1);
 
   /* Other */
-  --LineHeight: 2.1rem;
+  --LineHeight: 2.3rem;
   --BorderRadius: 0.3rem;
   --Padding: 2rem;
 }
