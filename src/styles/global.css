@@ -48,6 +48,7 @@ h2 {
   font-size: var(--H2-Size);
   margin-top: 5%;
   text-align: center;
+  color: rgba(213, 102, 110, 1);
 }
 
 p {
