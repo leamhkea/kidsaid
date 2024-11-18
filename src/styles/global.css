@@ -1,21 +1,24 @@
 /*
-/* DOWNLOADEDE FONTE */
 
-/* H1 OVERSKRIFT */
+
+Herunder har vi de downloadede fonte
+*/
+
+/* Overskrift H1 */
 .irish-grover-regular {
   font-family: "Irish Grover", system-ui;
   font-weight: 400;
   font-style: normal;
 }
 
-/* H2 OVERSKRIFT */
+/* Overskrift H2 */
 .montserrat-alternates-regular {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-/* BRØDTEKST */
+/* Brødtekst */
 .montserrat {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -23,6 +26,9 @@
 }
 
 /*
+
+
+Herunder har vi defineret de selecetorer, som påvirker faste elementer på sitet
 */
 
 * {
@@ -32,9 +38,23 @@
   list-style-type: "";
 }
 
+img {
+  width: 100%;
+}
+
 body {
   background-color: rgba(255, 254, 243, 1);
 }
+
+footer {
+  margin-top: 15rem;
+}
+
+/*
+
+
+Herunder har vi defineret de selectorer, som påvirker overskrifter og tekst
+*/
 
 h1 {
   font-family: "Irish Grover", system-ui;
@@ -46,8 +66,8 @@ h1 {
 h2 {
   font-family: "Montserrat Alternates", sans-serif;
   font-size: var(--H2-Size);
-  margin-top: 8rem;
-  margin-bottom: 1rem;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
   text-align: center;
   color: rgba(255, 172, 0, 1);
 }
@@ -56,31 +76,30 @@ p {
   font-family: "Montserrat", sans-serif;
   font-size: var(--Brødtekst-Size);
   line-height: var(--LineHeight);
-  margin: 0rem 20rem;
   padding: 1.5rem;
 }
 
-img {
-  width: 100%;
+@media (width > 800px) {
+  /* Ved desktop størrelse */
+  h1 {
+    font-size: 4rem;
+  }
+
+  p {
+    margin: 0rem 20rem;
+  }
 }
 
-footer {
-  margin-top: 15rem;
-}
+/*
+
+
+Herunder findes classes som henviser tilbage til elementer på index 
+*/
 
 .section2 {
   background-color: rgba(220, 158, 181, 1);
 }
 
-/* .section5 {
-  width: 100%;
-  height: 80vh;
-  padding-top: 200vh;
-  background-image: url("images/Holdet.webp");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-} */
 .holdet {
   width: 60%;
   display: block;
@@ -88,9 +107,15 @@ footer {
   margin-right: auto;
 }
 
+/*
+
+
+Herunder har vi alle tekststørrelser, farver osv samlet, som vi henviser til med var()
+*/
+
 :root {
   /* Font Size */
-  --H1-Size: 4rem;
+  --H1-Size: 2rem;
   --H2-Size: 2rem;
   --H3-Size: 2rem;
   --Brødtekst-Size: 1.1rem;

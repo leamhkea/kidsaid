@@ -35,41 +35,55 @@
     box-sizing: border-box;
   }
 
-  section {
-    /* margin: -10rem 0rem; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    overflow: hidden;
+  @media (width < 799px) {
+    /* Ved mobile størrelse */
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
-  .container {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  @media (width > 800px) {
+    /* Ved desktop størrelse */
+    section {
+      /* margin: -10rem 0rem; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow: hidden;
+      margin-top: -9rem;
+      margin-bottom: -9rem;
+    }
 
-  .container .card {
-    position: absolute;
-    width: 240px;
-    height: 320px;
-    cursor: pointer;
-    transition: 0.5s;
-    transform-origin: 50% 100%;
-    transform: rotate(calc(var(--i) * 5deg))
-      translate(calc(var(--i) * 120px), -50px);
-  }
+    .container {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-  .container:hover .card {
-    transform: rotate(calc(var(--i) * 5deg))
-      translate(calc(var(--i) * 120px), -50px);
-  }
+    .container .card {
+      position: absolute;
+      width: 240px;
+      height: 320px;
+      cursor: pointer;
+      transition: 0.5s;
+      transform-origin: 50% 100%;
+      transform: rotate(calc(var(--i) * 5deg))
+        translate(calc(var(--i) * 120px), -50px);
+    }
 
-  .container .card:hover {
-    translate: calc(var(--i) * 20px) -50px;
-    z-index: 100;
+    .container:hover .card {
+      transform: rotate(calc(var(--i) * 5deg))
+        translate(calc(var(--i) * 120px), -50px);
+    }
+
+    .container .card:hover {
+      translate: calc(var(--i) * 20px) -50px;
+      z-index: 100;
+    }
   }
 </style>
