@@ -2,21 +2,37 @@
 import "../styles/global.css";
 ---
 
-<h1 class="rainbow-letters">
-  <span>M</span>
-  <span>a</span>
-  <span>g</span>
-  <span>i</span>
-  <span>-</span>
-  <span>M</span>
-  <span>a</span>
-  <span>k</span>
-  <span>k</span>
-  <span>e</span>
-  <span>r</span>
-  <span>n</span>
-  <span>e</span>
-</h1>
+<script
+  src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+  type="module"></script>
+
+<dotlottie-player
+  src="https://lottie.host/b9ed3b38-f3ca-482d-bc7c-72fea10fd4ae/iCQhLjrOwT.json"
+  background="transparent"
+  speed="1"
+  style="width: 70%; height: 70%;"
+  loop
+  autoplay></dotlottie-player>
+
+<style>
+  dotlottie-player {
+    margin: 0 auto;
+  }
+</style>
+<!--   
+<span>M</span>
+<span>a</span>
+<span>g</span>
+<span>i</span>
+<span>-</span>
+<span>M</span>
+<span>a</span>
+<span>k</span>
+<span>k</span>
+<span>e</span>
+<span>r</span>
+<span>n</span>
+<span>e</span>
 
 <style>
   .rainbow-letters {
@@ -74,4 +90,4 @@ import "../styles/global.css";
   .rainbow-letters span:nth-child(10n + 12) {
     color: var(--Blue);
   }
-</style>
+</style> -->
