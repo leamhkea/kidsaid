@@ -53,52 +53,6 @@ footer {
 /*
 
 
-Herunder har vi defineret de selectorer, som påvirker overskrifter og tekst
-*/
-
-h1 {
-  font-family: "Irish Grover", system-ui;
-  font-size: var(--H1-Size);
-  text-align: center;
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-
-h2 {
-  font-family: "Montserrat Alternates", sans-serif;
-  font-size: 1.7rem;
-  padding-top: 4rem;
-  padding-bottom: 2rem;
-  text-align: center;
-  color: rgba(255, 172, 0, 1);
-}
-
-p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.9rem;
-  line-height: 1.8rem;
-  margin: 0rem 8%;
-}
-
-@media (width > 800px) {
-  /* Ved desktop størrelse */
-  h1 {
-    font-size: 4rem;
-  }
-  h2 {
-    font-size: var(--H2-Size);
-  }
-  p {
-    margin: 0rem 20%;
-    font-size: var(--Brødtekst-Size);
-    line-height: var(--LineHeight);
-    padding-bottom: 2.5rem;
-  }
-}
-
-/*
-
-
 Herunder findes classes som henviser tilbage til elementer på index 
 */
 
@@ -137,15 +91,52 @@ Herunder findes classes som henviser tilbage til elementer på index
 /*
 
 
-Herunder har vi alle tekststørrelser, farver osv samlet, som vi henviser til med var()
+Herunder har vi defineret de selectorer, som påvirker overskrifter og tekst
+*/
+
+h2 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: var(--H2-Size-Mobile);
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  color: rgba(255, 172, 0, 1);
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--Brødtekst-Size-Mobile);
+  line-height: 1.8rem;
+  margin: 0rem 8%;
+}
+
+@media (width > 800px) {
+  /* Ved desktop størrelse */
+  h2 {
+    font-size: var(--H2-Size-Desktop);
+  }
+  p {
+    margin: 0rem 20%;
+    font-size: var(--Brødtekst-Size-Desktop);
+    line-height: var(--LineHeight);
+    padding-bottom: 2.5rem;
+  }
+}
+
+/*
+
+
+Herunder har vi alt overordnet :root samlet, som vi henviser til med var()
 */
 
 :root {
-  /* Font Size */
-  --H1-Size: 2rem;
-  --H2-Size: 3rem;
-  --H3-Size: 2rem;
-  --Brødtekst-Size: 1.1rem;
+  /* Font Size Desktop*/
+  --H2-Size-Desktop: 3rem;
+  --Brødtekst-Size-Desktop: 1.1rem;
+
+  /* Font Size Mobile*/
+  --H2-Size-Mobile: 1.7rem;
+  --Brødtekst-Size-Mobile: 0.9rem;
 
   /* Colors */
   --White: rgba(255, 255, 255, 1);
