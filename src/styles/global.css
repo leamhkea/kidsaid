@@ -82,6 +82,7 @@ Herunder findes classes som henviser tilbage til elementer på index
 
 @media (width > 800px) {
   /* Ved desktop størrelse */
+
   .holdet {
     width: 60%;
     margin-bottom: 0rem;
