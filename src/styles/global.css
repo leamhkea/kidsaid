@@ -68,7 +68,9 @@ Herunder findes classes som henviser tilbage til elementer på index
 .section2,
 .section4 {
   background-color: rgba(238, 182, 94, 0.2);
+  /* background-image: linear-gradient(rgba(255, 254, 243, 0), rgba(238, 182, 94, 1), rgba(255, 254, 243, 0)); */
   padding-bottom: 5em;
+  
 }
 
 .holdet {
