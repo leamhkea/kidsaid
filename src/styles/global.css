@@ -76,7 +76,7 @@ p {
   font-family: "Montserrat", sans-serif;
   font-size: 0.9rem;
   line-height: 1.8rem;
-  padding-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
   margin: 0rem 8%;
 }
 
@@ -92,6 +92,7 @@ p {
     margin: 0rem 20%;
     font-size: var(--Brødtekst-Size);
     line-height: var(--LineHeight);
+    padding-bottom: 2.5rem;
   }
 }
 
@@ -121,6 +122,12 @@ Herunder findes classes som henviser tilbage til elementer på index
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (width > 800px) {
+  .holdet {
+    width: 100%;
+  }
 }
 
 /*
