@@ -46,10 +46,6 @@ body {
   background-color: rgba(255, 254, 243, 1);
 }
 
-footer {
-  margin-top: 15rem;
-}
-
 /*
 
 
@@ -57,7 +53,8 @@ Herunder findes classes som henviser tilbage til elementer på index
 */
 
 .section1,
-.section3 {
+.section3,
+.section5 {
   background-image: url("images/baggrund2.webp");
   background-size: cover;
   background-position: center;
@@ -86,19 +83,20 @@ Herunder findes classes som henviser tilbage til elementer på index
   padding-bottom: 18%;
 }
 
-footer {
+.someikon {
   display: flex;
-  width: 80px;
-  height: 80px;
-  padding: 5px;
+  justify-content: center;
 }
 
 @media (width > 800px) {
   /* Ved desktop størrelse */
-
   .holdet {
     width: 60%;
     margin-bottom: 0rem;
+  }
+  .someikon {
+    margin-left: 35rem;
+    margin-right: 35rem;
   }
 }
 
