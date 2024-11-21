@@ -70,7 +70,6 @@ Herunder findes classes som henviser tilbage til elementer på index
   background-color: rgba(238, 182, 94, 0.2);
   /* background-image: linear-gradient(rgba(255, 254, 243, 0), rgba(238, 182, 94, 1), rgba(255, 254, 243, 0)); */
   padding-bottom: 5em;
-  
 }
 
 .holdet {
@@ -80,6 +79,11 @@ Herunder findes classes som henviser tilbage til elementer på index
   margin-right: auto;
   margin-bottom: 2rem;
   margin-top: 2rem;
+}
+
+.overskrift {
+  padding-top: 18%;
+  padding-bottom: 18%;
 }
 
 @media (width > 800px) {
@@ -119,7 +123,7 @@ p {
     font-size: var(--H2-Size-Desktop);
   }
   p {
-    margin: 0rem 20%;
+    margin: 0rem 25%;
     font-size: var(--Brødtekst-Size-Desktop);
     line-height: var(--LineHeight);
     padding-bottom: 2.5rem;
